@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nilesh Kumar – Aspiring Software Engineer specializing in Java, DevOps, and Data Analytics. B.Tech CSE at LPU." />
+  <title>Nilesh Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── CURSOR ─────────────────────────────── -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ── LOADER ─────────────────────────────── -->
+  <div class="loader-overlay" id="loaderOverlay">
+    <div class="loader-content">
+      <div class="loader-logo">NK<span class="accent">.</span></div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-text" id="loaderText">Loading profile...</div>
+    </div>
+  </div>
+
+  <!-- ── NAVBAR ─────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Nilesh<span class="accent">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"           class="nav-link active">Home</a></li>
+        <li><a href="#about"          class="nav-link">About</a></li>
+        <li><a href="#skills"         class="nav-link">Skills</a></li>
+        <li><a href="#projects"       class="nav-link">Projects</a></li>
+        <li><a href="#internships"    class="nav-link">Internships</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#education"      class="nav-link">Education</a></li>
+        <li><a href="#contact"        class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="bx bx-sun" id="themeIcon"></i>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HOME / HERO
+  ══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <canvas class="particle-canvas" id="particleCanvas"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-available reveal-up">
+          <span class="status-dot"></span> Open to opportunities
+        </div>
+
+        <h1 class="hero-title reveal-up">
+          Nilesh <span class="gradient-text">Kumar</span>
+        </h1>
+
+        <div class="hero-role reveal-up">
+          <span class="role-static">Aspiring </span>
+          <span class="typewriter" id="typewriter"></span><span class="tw-cursor">|</span>
+        </div>
+
+        <p class="hero-tagline reveal-up">
+          Specializing in <strong>Java</strong>, <strong>DevOps</strong> &amp; <strong>Data Analytics</strong> —
+          focused on building scalable systems and data-driven solutions.
+        </p>
+
+        <div class="hero-cta reveal-up">
+          <a href="#projects" class="btn btn-primary magnetic">
+            <i class="bx bx-code-block"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-ghost magnetic">
+            <i class="bx bx-envelope"></i> Hire Me
+          </a>
+        </div>
+
+        <div class="hero-links reveal-up">
+          <a href="https://github.com/NILESH536" target="_blank" rel="noopener" class="hero-link magnetic" aria-label="GitHub">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/-kumar-nilesh-" target="_blank" rel="noopener" class="hero-link magnetic" aria-label="LinkedIn">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="mailto:nileshkr536@gmail.com" class="hero-link magnetic" aria-label="Email">
+            <i class="bx bx-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <!-- Avatar blob -->
+        <div class="avatar-blob">
+          <div class="avatar-ring ring-outer"></div>
+          <div class="avatar-ring ring-inner"></div>
+          <div class="avatar-core">
+            <span>NK</span>
+          </div>
+        </div>
+
+        <!-- Floating stat cards -->
+        <div class="hero-stat-card glass-card card-top-right">
+          <i class="bx bx-trophy"></i>
+          <div>
+            <strong>12th Rank</strong>
+            <span>CTF: Concoction 24</span>
+          </div>
+        </div>
+        <div class="hero-stat-card glass-card card-bot-left">
+          <i class="bx bx-data"></i>
+          <div>
+            <strong>73K+ Records</strong>
+            <span>Analyzed in CropPulse</span>
+          </div>
+        </div>
+        <div class="hero-stat-card glass-card card-bot-right">
+          <i class="bx bxl-docker"></i>
+          <div>
+            <strong>DevOps Pipeline</strong>
+            <span>CI/CD · Docker · Actions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Who I am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card reveal-left">
+          <div class="about-avatar">
+            <img src="profile.jpg"
+                 alt="Nilesh Kumar"
+                 class="about-photo"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+            <span class="about-initials" style="display:none">NK</span>
+            <div class="about-avatar-glow"></div>
+          </div>
+          <div class="about-quick-info">
+            <div class="quick-item">
+              <i class="bx bx-map-pin"></i>
+              <span>Phagwara, Punjab, India</span>
+            </div>
+            <div class="quick-item">
+              <i class="bx bx-graduation"></i>
+              <span>B.Tech CSE · LPU</span>
+            </div>
+            <div class="quick-item">
+              <i class="bx bx-briefcase"></i>
+              <span>2 Internships Completed</span>
+            </div>
+            <div class="quick-item">
+              <i class="bx bx-trophy"></i>
+              <span>Rank 12 · CTF Hackathon</span>
+            </div>
+          </div>
+          <div class="about-btns">
+            <a href="https://github.com/NILESH536" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              <i class="bx bxl-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/-kumar-nilesh-" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+              <i class="bx bxl-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="about-text-block reveal-right">
+          <h3 class="about-name">Nilesh Kumar</h3>
+          <p class="about-bio">
+            I'm a passionate B.Tech Computer Science Engineering student at <strong>Lovely Professional University</strong>, building expertise at the intersection of <strong>software engineering</strong>, <strong>DevOps automation</strong>, and <strong>data analytics</strong>.
+          </p>
+          <p class="about-bio">
+            My journey spans building a complete <strong>CI/CD pipeline with Docker &amp; GitHub Actions</strong> for a Java application, to analyzing over <strong>73,000 agricultural records</strong> to surface insights via Power BI dashboards — bridging the gap between raw data and actionable decisions.
+          </p>
+          <p class="about-bio">
+            With hands-on internships at <strong>Vodafone Idea Foundation</strong> and <strong>Edunet Foundation</strong>, I've worked with real business datasets and delivered impactful analytics solutions. I thrive in fast-paced environments and believe in learning by building.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar reveal-up">
+              <div class="pillar-icon"><i class="bx bx-code-block"></i></div>
+              <span>Software Engineering</span>
+            </div>
+            <div class="pillar reveal-up">
+              <div class="pillar-icon"><i class="bx bxl-docker"></i></div>
+              <span>DevOps &amp; CI/CD</span>
+            </div>
+            <div class="pillar reveal-up">
+              <div class="pillar-icon"><i class="bx bx-bar-chart-alt-2"></i></div>
+              <span>Data Analytics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════════ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Tech stack</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+
+      <div class="skills-tabs reveal-up">
+        <button class="stab active" data-tab="sk-lang">Languages</button>
+        <button class="stab" data-tab="sk-frontend">Frontend</button>
+        <button class="stab" data-tab="sk-tools">Tools & DevOps</button>
+        <button class="stab" data-tab="sk-data">Data & DB</button>
+      </div>
+
+      <!-- Languages -->
+      <div class="skills-panel active" id="sk-lang">
+        <div class="skills-grid">
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon java"><i class="bx bxl-java"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">Java</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
+              <span class="sk-pct">85%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon cpp"><i class="bx bxs-chip"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">C++</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="78"></div></div>
+              <span class="sk-pct">78%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon python"><i class="bx bxl-python"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">Python</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="72"></div></div>
+              <span class="sk-pct">72%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon c"><i class="bx bx-code-curly"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">C</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="70"></div></div>
+              <span class="sk-pct">70%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon dsa"><i class="bx bx-network-chart"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">DSA</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="75"></div></div>
+              <span class="sk-pct">75%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="skills-panel" id="sk-frontend">
+        <div class="skills-grid">
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon html"><i class="bx bxl-html5"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">HTML5</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="82"></div></div>
+              <span class="sk-pct">82%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon css"><i class="bx bxl-css3"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">CSS3</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="78"></div></div>
+              <span class="sk-pct">78%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon js"><i class="bx bxl-javascript"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">JavaScript</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="70"></div></div>
+              <span class="sk-pct">70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & DevOps -->
+      <div class="skills-panel" id="sk-tools">
+        <div class="skills-grid">
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon docker"><i class="bx bxl-docker"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">Docker</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="80"></div></div>
+              <span class="sk-pct">80%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon git"><i class="bx bxl-git"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">Git &amp; GitHub</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="85"></div></div>
+              <span class="sk-pct">85%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon linux"><i class="bx bxl-tux"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">Linux (Ubuntu)</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="75"></div></div>
+              <span class="sk-pct">75%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon actions"><i class="bx bx-git-pull-request"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">GitHub Actions</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="72"></div></div>
+              <span class="sk-pct">72%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon jupyter"><i class="bx bx-analyse"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">Jupyter Notebook</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="70"></div></div>
+              <span class="sk-pct">70%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data & DB -->
+      <div class="skills-panel" id="sk-data">
+        <div class="skills-grid">
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon powerbi"><i class="bx bx-bar-chart-alt-2"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">Power BI</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="82"></div></div>
+              <span class="sk-pct">82%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon mysql"><i class="bx bx-data"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">MySQL</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="78"></div></div>
+              <span class="sk-pct">78%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon mongo"><i class="bx bx-server"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">MongoDB</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="65"></div></div>
+              <span class="sk-pct">65%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon aws"><i class="bx bxl-aws"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">AWS Aurora</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="60"></div></div>
+              <span class="sk-pct">60%</span>
+            </div>
+          </div>
+          <div class="skill-card glass-card tilt-card reveal-up">
+            <div class="sk-icon excel"><i class="bx bx-spreadsheet"></i></div>
+            <div class="sk-info">
+              <span class="sk-name">Excel</span>
+              <div class="sk-bar"><div class="sk-fill" data-w="78"></div></div>
+              <span class="sk-pct">78%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I've built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <!-- FEATURED: EventFlow -->
+      <div class="featured-project glass-card reveal-up" id="featuredProject">
+        <div class="fp-badge">⭐ Featured Project</div>
+        <div class="fp-inner">
+          <div class="fp-info">
+            <div class="fp-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Docker</span>
+              <span class="tag">GitHub Actions</span>
+              <span class="tag">Linux</span>
+              <span class="tag tag-devops">DevOps</span>
+            </div>
+            <h3 class="fp-title">EventFlow</h3>
+            <p class="fp-sub">Java Event Reminder System with Full DevOps Pipeline</p>
+            <p class="fp-desc">
+              Built a production-ready Java application end-to-end — from core logic (using DSA principles) to a complete DevOps pipeline. Automated CI with <strong>GitHub Actions</strong>, containerized the application using <strong>Docker</strong> for consistent deployments, and integrated <strong>HTML/CSS/JS</strong> for a lightweight UI layer. Deployed and tested on <strong>Linux (Ubuntu)</strong>.
+            </p>
+
+            <ul class="fp-highlights">
+              <li><i class="bx bx-check-circle"></i> Complete CI/CD pipeline with GitHub Actions</li>
+              <li><i class="bx bx-check-circle"></i> Dockerized for environment-agnostic deployment</li>
+              <li><i class="bx bx-check-circle"></i> DSA-driven Java core for efficient event scheduling</li>
+              <li><i class="bx bx-check-circle"></i> Fully automated — push to deploy</li>
+            </ul>
+
+            <div class="fp-actions">
+              <a href="https://github.com/NILESH536/devops-automation-platform" target="_blank" rel="noopener" class="btn btn-primary magnetic">
+                <i class="bx bxl-github"></i> View on GitHub
+              </a>
+              <button class="btn btn-ghost magnetic" data-project="eventflow" id="eventflowBtn">
+                <i class="bx bx-info-circle"></i> Details
+              </button>
+            </div>
+          </div>
+
+          <div class="fp-visual">
+            <div class="fp-diagram">
+              <div class="fp-step">
+                <div class="fp-step-icon"><i class="bx bx-code-alt"></i></div>
+                <span>Java + DSA</span>
+              </div>
+              <div class="fp-arrow"><i class="bx bx-right-arrow-alt"></i></div>
+              <div class="fp-step">
+                <div class="fp-step-icon git-col"><i class="bx bxl-github"></i></div>
+                <span>GitHub Actions CI</span>
+              </div>
+              <div class="fp-arrow"><i class="bx bx-right-arrow-alt"></i></div>
+              <div class="fp-step">
+                <div class="fp-step-icon docker-col"><i class="bx bxl-docker"></i></div>
+                <span>Docker Container</span>
+              </div>
+              <div class="fp-arrow"><i class="bx bx-right-arrow-alt"></i></div>
+              <div class="fp-step">
+                <div class="fp-step-icon linux-col"><i class="bx bxl-tux"></i></div>
+                <span>Linux Deploy</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other projects grid -->
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal glass-card">
+      <button class="modal-close" id="modalClose" aria-label="Close"><i class="bx bx-x"></i></button>
+      <div class="modal-header" id="modalHeader"></div>
+      <div class="modal-body">
+        <div class="modal-tags" id="modalTags"></div>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+        <div class="modal-highlights" id="modalHighlights"></div>
+        <div class="modal-links" id="modalLinks"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       INTERNSHIPS
+  ══════════════════════════════════════════ -->
+  <section class="section section-alt" id="internships">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Real-world experience</span>
+        <h2 class="section-title">Internships &amp; <span class="gradient-text">Training</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up">
+          <div class="tl-dot"></div>
+          <div class="tl-card glass-card tilt-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">BI &amp; Analytics Intern</h3>
+                <span class="tl-org">Vodafone Idea Foundation</span>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-badge">Completed</span>
+              </div>
+            </div>
+            <span class="tl-date"><i class="bx bx-calendar"></i> 2024</span>
+            <p class="tl-desc">
+              Developed interactive <strong>Power BI dashboards</strong> powered by real business datasets, improving decision-making visibility for stakeholders. Delivered structured, data-driven insights in a professional enterprise setting.
+            </p>
+            <div class="tl-tags">
+              <span>Power BI</span>
+              <span>Data Modeling</span>
+              <span>Business Analytics</span>
+              <span>Excel</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://drive.google.com/file/d/1Ws5PHfG6jpwREig_seywSSQ5CPET8RYx/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" aria-label="View Vodafone Idea Certificate">
+                <i class="bx bx-link-external"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="tl-dot tl-dot-2"></div>
+          <div class="tl-card glass-card tilt-card">
+            <div class="tl-head">
+              <div>
+                <h3 class="tl-role">Data Analytics Intern</h3>
+                <span class="tl-org">Edunet Foundation</span>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-badge">Completed</span>
+              </div>
+            </div>
+            <span class="tl-date"><i class="bx bx-calendar"></i> 2024</span>
+            <p class="tl-desc">
+              Built an <strong>AI chatbot using IBM SkillBuild</strong> platform. Created analytics dashboards and reports from raw datasets. Worked in a team-based, fast-paced environment delivering end-to-end data solutions.
+            </p>
+            <div class="tl-tags">
+              <span>IBM SkillBuild</span>
+              <span>AI / Chatbot</span>
+              <span>Data Visualization</span>
+              <span>Reporting</span>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="https://drive.google.com/file/d/1yWLd443zjqXSrVUZO2BrIjl4kucYQn3A/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" aria-label="View Edunet Certificate">
+                <i class="bx bx-link-external"></i> View Certificate
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CERTIFICATIONS + ACHIEVEMENTS
+  ══════════════════════════════════════════ -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">Certs &amp; <span class="gradient-text">Achievements</span></h2>
+      </div>
+
+      <!-- Certifications Row -->
+      <h3 class="ca-subtitle reveal-up" style="margin-bottom:1.5rem"><i class="bx bx-certification"></i> Certifications</h3>
+      <div class="certs-row">
+
+        <!-- Oracle -->
+        <a class="cert-card cert-card-img glass-card tilt-card reveal-up"
+           href="https://drive.google.com/file/d/1maeyf4856hQCWX9UUi22fuHusbnypHWM/view?usp=drive_link"
+           target="_blank" rel="noopener" aria-label="View Oracle Certified Foundations Associate certificate">
+          <div class="cert-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1maeyf4856hQCWX9UUi22fuHusbnypHWM&sz=w640"
+                 alt="Oracle Certified Foundations Associate certificate"
+                 loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.cert-thumb-fallback').style.display='flex'" />
+            <div class="cert-thumb-fallback" style="display:none"><i class="bx bx-cloud cert-icon oracle"></i></div>
+            <div class="cert-thumb-overlay"><i class="bx bx-link-external"></i> View Certificate</div>
+          </div>
+          <div class="cert-foot">
+            <div class="cert-body">
+              <h4 class="cert-title">Oracle Certified Foundations Associate</h4>
+              <span class="cert-issuer">Oracle Corporation · Sep 2025</span>
+            </div>
+            <span class="cert-verified"><i class="bx bx-check-shield"></i></span>
+          </div>
+        </a>
+
+        <!-- AWS -->
+        <a class="cert-card cert-card-img glass-card tilt-card reveal-up"
+           href="https://drive.google.com/file/d/1-F-4eOl1g0mR9eHI1tTX3_jPzUsMWfQw/view?usp=drive_link"
+           target="_blank" rel="noopener" aria-label="View AWS Academy Cloud Foundations certificate">
+          <div class="cert-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1-F-4eOl1g0mR9eHI1tTX3_jPzUsMWfQw&sz=w640"
+                 alt="AWS Academy Cloud Foundations certificate"
+                 loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.cert-thumb-fallback').style.display='flex'" />
+            <div class="cert-thumb-fallback" style="display:none"><i class="bx bxl-aws cert-icon aws"></i></div>
+            <div class="cert-thumb-overlay"><i class="bx bx-link-external"></i> View Certificate</div>
+          </div>
+          <div class="cert-foot">
+            <div class="cert-body">
+              <h4 class="cert-title">AWS Academy Cloud Foundations</h4>
+              <span class="cert-issuer">Amazon Web Services · Apr 2025</span>
+            </div>
+            <span class="cert-verified"><i class="bx bx-check-shield"></i></span>
+          </div>
+        </a>
+
+        <!-- Google / Coursera -->
+        <a class="cert-card cert-card-img glass-card tilt-card reveal-up"
+           href="https://drive.google.com/file/d/1gHZpZxcHBuh4cuZUe7hJPHkxj1O0V3qA/view?usp=drive_link"
+           target="_blank" rel="noopener" aria-label="View Bits and Bytes of Computer Networking certificate">
+          <div class="cert-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1gHZpZxcHBuh4cuZUe7hJPHkxj1O0V3qA&sz=w640"
+                 alt="Bits and Bytes of Computer Networking certificate"
+                 loading="lazy" onerror="this.style.display='none';this.parentElement.querySelector('.cert-thumb-fallback').style.display='flex'" />
+            <div class="cert-thumb-fallback" style="display:none"><i class="bx bxl-google cert-icon google"></i></div>
+            <div class="cert-thumb-overlay"><i class="bx bx-link-external"></i> View Certificate</div>
+          </div>
+          <div class="cert-foot">
+            <div class="cert-body">
+              <h4 class="cert-title">Bits and Bytes of Computer Networking</h4>
+              <span class="cert-issuer">Google via Coursera · Sep 2024</span>
+            </div>
+            <span class="cert-verified"><i class="bx bx-check-shield"></i></span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Achievement Row -->
+      <h3 class="ca-subtitle reveal-up" style="margin-top:3rem;margin-bottom:1.5rem"><i class="bx bx-trophy"></i> Achievements</h3>
+      <a href="https://drive.google.com/file/d/1R9dwndX_xxOB7rTlmRTmjgAS4a1IUQG3/view?usp=sharing" target="_blank" rel="noopener" class="achieve-card glass-card tilt-card reveal-up" style="text-decoration:none;color:inherit;cursor:pointer;">
+        <div class="achieve-rank">12<sup>th</sup></div>
+        <div class="achieve-info">
+          <h4>Hackathon CTF: Concoction 24</h4>
+          <p>Secured <strong>12th rank</strong> in a competitive Capture The Flag hackathon event. Demonstrated problem-solving, logical thinking, and technical skills under pressure.</p>
+          <div class="achieve-tags">
+            <span>CTF</span>
+            <span>Problem Solving</span>
+            <span>Competitive Programming</span>
+          </div>
+          <div style="margin-top:.75rem">
+            <span class="btn btn-ghost btn-sm" aria-label="View Hackathon Certificate">
+              <i class="bx bx-link-external"></i> View Certificate
+            </span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       EDUCATION
+  ══════════════════════════════════════════ -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Academic background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+      </div>
+
+      <div class="edu-grid">
+
+        <div class="edu-card glass-card tilt-card reveal-up edu-current">
+          <div class="edu-year-badge current-badge">2022 – Present</div>
+          <div class="edu-icon"><i class="bx bx-building-house"></i></div>
+          <h3 class="edu-degree">B.Tech – Computer Science &amp; Engineering</h3>
+          <span class="edu-inst">Lovely Professional University, Phagwara</span>
+          <div class="edu-score">
+            <span class="score-label">CGPA</span>
+            <span class="score-val">6.61 / 10</span>
+          </div>
+          <div class="edu-highlights">
+            <span><i class="bx bx-check"></i> DevOps &amp; Cloud Computing</span>
+            <span><i class="bx bx-check"></i> Data Analytics</span>
+            <span><i class="bx bx-check"></i> Java &amp; DSA</span>
+          </div>
+        </div>
+
+        <div class="edu-card glass-card tilt-card reveal-up">
+          <div class="edu-year-badge">2020 – 2022</div>
+          <div class="edu-icon edu-icon-2"><i class="bx bx-book-open"></i></div>
+          <h3 class="edu-degree">Class XII – Science (PCM)</h3>
+          <span class="edu-inst">DAV Public School</span>
+          <div class="edu-score">
+            <span class="score-label">Percentage</span>
+            <span class="score-val">61%</span>
+          </div>
+          <div class="edu-highlights">
+            <span><i class="bx bx-check"></i> Physics, Chemistry, Maths</span>
+            <span><i class="bx bx-check"></i> Computer Science</span>
+          </div>
+        </div>
+
+        <div class="edu-card glass-card tilt-card reveal-up">
+          <div class="edu-year-badge">2018 – 2020</div>
+          <div class="edu-icon edu-icon-3"><i class="bx bx-book"></i></div>
+          <h3 class="edu-degree">Class X – Secondary Education</h3>
+          <span class="edu-inst">DAV Public School</span>
+          <div class="edu-score">
+            <span class="score-label">Percentage</span>
+            <span class="score-val score-good">85%</span>
+          </div>
+          <div class="edu-highlights">
+            <span><i class="bx bx-check"></i> Strong academic foundation</span>
+            <span><i class="bx bx-check"></i> Core Sciences</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Let's connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3 class="contact-cta">Ready to build something great?</h3>
+          <p class="contact-sub">I'm actively looking for internship and entry-level software engineering roles. Whether you have a project idea, a role, or just want to connect — reach out!</p>
+
+          <div class="contact-details">
+            <a href="mailto:nileshkr536@gmail.com" class="contact-detail-item">
+              <div class="cd-icon"><i class="bx bx-envelope"></i></div>
+              <div>
+                <span class="cd-label">Email</span>
+                <span class="cd-val">nileshkr536@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+919234261541" class="contact-detail-item">
+              <div class="cd-icon"><i class="bx bx-phone"></i></div>
+              <div>
+                <span class="cd-label">Phone</span>
+                <span class="cd-val">+91-9234261541</span>
+              </div>
+            </a>
+            <div class="contact-detail-item non-link">
+              <div class="cd-icon"><i class="bx bx-map-pin"></i></div>
+              <div>
+                <span class="cd-label">Location</span>
+                <span class="cd-val">Phagwara, Punjab, India 🇮🇳</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/NILESH536" target="_blank" rel="noopener" class="social-btn magnetic" aria-label="GitHub">
+              <i class="bx bxl-github"></i>
+              <span>NILESH536</span>
+            </a>
+            <a href="https://www.linkedin.com/in/-kumar-nilesh-" target="_blank" rel="noopener" class="social-btn social-li magnetic" aria-label="LinkedIn">
+              <i class="bx bxl-linkedin"></i>
+              <span>kumar-nilesh</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form glass-card" id="contactForm" novalidate>
+            <h3 class="form-title">Send a Message</h3>
+
+            <div class="form-group">
+              <label for="fname">Full Name *</label>
+              <input type="text" id="fname" name="name" placeholder="Your name" autocomplete="name" />
+              <span class="form-error" id="nameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address *</label>
+              <input type="email" id="femail" name="email" placeholder="your@email.com" autocomplete="email" />
+              <span class="form-error" id="emailErr"></span>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fphone">Phone</label>
+                <input type="tel" id="fphone" name="phone" placeholder="+91 XXXXXXXXXX" />
+              </div>
+              <div class="form-group">
+                <label for="ftype">Opportunity Type</label>
+                <select id="ftype" name="type">
+                  <option value="">Select...</option>
+                  <option value="internship">Internship</option>
+                  <option value="fulltime">Full-time Role</option>
+                  <option value="project">Project Collaboration</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Message *</label>
+              <textarea id="fmsg" name="message" rows="5" placeholder="Tell me about the opportunity or how I can help..."></textarea>
+              <span class="form-error" id="msgErr"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full magnetic" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <i class="bx bx-send" id="btnIcon"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-logo">NK<span class="accent">.</span></div>
+        <p class="footer-name">Nilesh Kumar</p>
+        <p class="footer-tagline">Java · DevOps · Data Analytics</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-copy">© <span id="fyear"></span> Nilesh Kumar. Built with HTML, CSS &amp; JS.</p>
+        <p class="footer-note">Aspiring Software Engineer · LPU CSE '26</p>
+      </div>
+    </div>
+    <button class="btt-btn magnetic" id="backToTop" aria-label="Back to top">
+      <i class="bx bx-chevron-up"></i>
+    </button>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <i class="bx bx-check-circle toast-icon" id="toastIcon"></i>
+    <span id="toastMsg"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
